@@ -33,7 +33,7 @@ pipeline{
    stage("deploy"){
 	   steps{
 
-      sshagent(['deployment']) {
+      sshagent(['tomcat_user']) {
 
 	        sh """
                  
